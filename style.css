@@ -146,7 +146,9 @@ img {
     padding: 5px;
     position: fixed;
     bottom: 2%;
-    left: 20%;
+    left: 0;
+    right: 0;
+
 }
 
 .cookiesphoto img {
