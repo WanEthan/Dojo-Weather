@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- -----------nav-bar section------------- -->
+
+    <div class="navbar">
+
+        <h1>Dojo Weather</h1>
+
+        <ul class="cities">
+            <li><a href="#" class="city1" onclick="alertdisplay()">Burbank</a></li>
+            <li><a href="#" class="city1" onclick="alertdisplay()">Chicago</a></li>
+            <li><a href="#" class="city1" onclick="alertdisplay()">Dallas</a></li>
+        </ul>
+
+    </div>
+
+    <!-- -----------city and tem selector section------------- -->
+
+    <div class="city-temselector">
+        <p class="currentcity">San Jose</p>
+
+        <div class="tem-selector">
+            <label for="degree">show temperature in </label>
+            <select name="typesofdegree" id="degree" onchange="changedegree(this)">
+                <option value="Celsius">°C</option>
+                <option value="Fahrenheit">°F</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- -----------weather report section------------- -->
+
+    <div class="weathercard">
+
+        <div class="days">
+            <h2 class="day">Today</h2>
+            <img src="./assets/some_rain.png" alt="raining">
+            <p class="condition">some rain</p>
+            <div class="rangetemperature">
+                <p id="todayhigh" class="hightem">24°</p>
+                <p id="todaylow" class="lowtem">18°</p>
+            </div>
+        </div>
+
+        <div class="days">
+            <h2 class="day">Tommorrow</h2>
+            <img src="./assets/some_sun.png" alt="sunny">
+            <p class="condition">some sun</p>
+            <div class="rangetemperature">
+                <p id="tomhigh" class="hightem">27°</p>
+                <p id="tomlow" class="lowtem">19°</p>
+            </div>
+        </div>
+
+        <div class="days">
+            <h2 class="day">Friday</h2>
+            <img src="./assets/some_clouds.png" alt="cloudy">
+            <p class="condition">some clouds</p>
+            <div class="rangetemperature">
+                <p id="frihigh" class="hightem">21°</p>
+                <p id="frilow" class="lowtem">16°</p>
+            </div>
+        </div>
+
+        <div class="days">
+            <h2 class="day">Saturday</h2>
+            <img src="./assets/some_sun.png" alt="sunny">
+            <p class="condition">some sun</p>
+            <div class="rangetemperature">
+                <p id="sathigh" class="hightem">26°</p>
+                <p id="satlow" class="lowtem">21°</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- -----------cookies section------------- -->
+
+
+    <div class="cookies">
+
+        <div class="cookiesphoto">
+            <img src="./assets/cookie.png" alt="cookies">
+        </div>
+        <div class="description">
+            <p class="content"><strong>Stop! Cookie time</strong><br>
+                We use cookies (sadly not the edible ones) tp personalize content and ads, to provide social media
+                features and to analyse our traffic. <a href="#">Read more...</a>
+            </p>
+        </div>
+        <div class="button">
+            <button class="accept" onclick="removecookies()">I Accept</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
